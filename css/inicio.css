@@ -1,0 +1,50 @@
+body{
+    background: #2a333d;
+    color: #fff;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+#logo{
+
+    
+        display: inline-block;
+        width: 200px;
+        height: 50px;
+      
+        text-align: left;
+        vertical-align: text-bottom;
+     
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 200px auto;
+    
+}
+
+.container{
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+form{
+    width: 100%;
+}
+
+.container #Password{
+    width: 97%;
+    padding: 1%;
+}
+
+.container .btn{
+    width: 100%;
+    padding: 2%;
+    margin-top: 10px;
+    background: #2cc197;
+   
+}
