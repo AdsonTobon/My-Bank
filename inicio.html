@@ -1,25 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/inicio.css">
-    <title>Inicio</title>
-</head>
-<body>
-    
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro"
+      rel="stylesheet"
+    />
+    <title>CAJERO VIRTUAL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body style="display: none">
+    <!--- <body style="display: block"> -->
     <div class="header">
-        <img src="img/logo.png" alt="Logo Mi Bank" id="logo">
-        <div class="container">
-            <form  class="form" id="form" action="index.html">
-                <h2>Por favor ingrese su contraseña</h2>
-                <input type="password" name="password" id="Password"  placeholder="*******"><br>
-                <button  type="button" class="btn" id="btn-password">VALIDAR</button>
-            </form>
-        </div>
+      <img class="logo" src="img/logo.png" />
+      <div class="align-left">
+        <span id="nombre">Bienvenido/a</span>
+        <img class="avatar" src="img/avatar.svg" />
+      </div>
     </div>
-
-</body>
-<script src="js/inicio.js"></script>
+    <div class="white-container">
+      <div class="menu-container">
+        <h1 class="tu-cuenta">Tu cuenta</h1>
+        <button class="links" onclick="extraerDinero()">Extraer dinero</button>
+        <button class="links" onclick="depositarDinero()">
+          Depositar dinero
+        </button>
+        <button class="links" id="servicios">Pagar servicios</button>
+        <button class="links" onclick="">
+          Transferir dinero
+        </button>
+        <button class="links" onclick="cambiarLimiteDeExtraccion()">
+          Cambiar límite de extracción
+        </button>
+        <form action="index.html" id="form">
+          <button type="button" class="links" id="cerrar-sesion">
+            Cerrar sesión
+          </button>
+        </form>
+      </div>
+      <div class="green-container">
+        <div class="cuenta-info">
+          <p>Saldo en tu cuenta</p>
+          <h3 id="saldo-cuenta">$</h3>
+          <p id="limite-extraccion">Tu límite de estraccion es:</p>
+          
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
 </html>
-
